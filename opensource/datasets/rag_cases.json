@@ -1,0 +1,152 @@
+[
+  {
+    "id": "rag-01",
+    "question": "What is the return window?",
+    "contexts": [
+      "Returns are accepted within 30 days of delivery. Items must be unused."
+    ],
+    "response": "You can return an unused item within 30 days of delivery.",
+    "reference": "Unused items may be returned within 30 days of delivery.",
+    "expected_grounded": true,
+    "expected_relevant": true,
+    "expected_context_relevance": [
+      true
+    ]
+  },
+  {
+    "id": "rag-02",
+    "question": "How long does standard shipping take?",
+    "contexts": [
+      "Standard shipping takes 3 to 5 business days.",
+      "Express shipping takes 1 to 2 business days."
+    ],
+    "response": "Standard shipping takes 3 to 5 business days.",
+    "reference": "Standard shipping takes 3 to 5 business days.",
+    "expected_grounded": true,
+    "expected_relevant": true,
+    "expected_context_relevance": [
+      true,
+      false
+    ]
+  },
+  {
+    "id": "rag-03",
+    "question": "What is the laptop's memory and storage?",
+    "contexts": [
+      "The NovaBook has 16 GB RAM and a 512 GB SSD."
+    ],
+    "response": "It has 16 GB RAM and a 512 GB SSD.",
+    "reference": "The laptop has 16 GB RAM and 512 GB SSD storage.",
+    "expected_grounded": true,
+    "expected_relevant": true,
+    "expected_context_relevance": [
+      true
+    ]
+  },
+  {
+    "id": "rag-04",
+    "question": "Is international shipping available?",
+    "contexts": [
+      "International delivery is available to Canada and the UK.",
+      "Orders to other countries are not currently supported."
+    ],
+    "response": "Yes, international delivery is available to Canada and the UK, but not other countries.",
+    "reference": "International delivery is available to Canada and the UK only.",
+    "expected_grounded": true,
+    "expected_relevant": true,
+    "expected_context_relevance": [
+      true,
+      false
+    ]
+  },
+  {
+    "id": "rag-05",
+    "question": "What is the warranty period?",
+    "contexts": [
+      "The headphones include a one-year limited warranty.",
+      "The store is closed on public holidays."
+    ],
+    "response": "The headphones include a one-year limited warranty.",
+    "reference": "The headphones have a one-year limited warranty.",
+    "expected_grounded": true,
+    "expected_relevant": true,
+    "expected_context_relevance": [
+      true,
+      false
+    ]
+  },
+  {
+    "id": "rag-06",
+    "question": "Can a customer return an item after 45 days?",
+    "contexts": [
+      "Returns are accepted within 30 days of delivery."
+    ],
+    "response": "Yes, returns are accepted for 60 days.",
+    "reference": "No. The return window is 30 days from delivery.",
+    "expected_grounded": false,
+    "expected_relevant": true,
+    "expected_context_relevance": [
+      true
+    ]
+  },
+  {
+    "id": "rag-07",
+    "question": "What payment methods are accepted?",
+    "contexts": [
+      "We accept Visa, Mastercard, and PayPal.",
+      "The NovaBook has a 14-inch display."
+    ],
+    "response": "Visa, Mastercard, and PayPal are accepted.",
+    "reference": "The accepted methods are Visa, Mastercard, and PayPal.",
+    "expected_grounded": true,
+    "expected_relevant": true,
+    "expected_context_relevance": [
+      true,
+      false
+    ]
+  },
+  {
+    "id": "rag-08",
+    "question": "How do I track an order?",
+    "contexts": [
+      "A tracking link is emailed after the order ships."
+    ],
+    "response": "Use the tracking link sent by email after your order ships.",
+    "reference": "The tracking link is emailed once the order ships.",
+    "expected_grounded": true,
+    "expected_relevant": true,
+    "expected_context_relevance": [
+      true
+    ]
+  },
+  {
+    "id": "rag-09",
+    "question": "Does the product come in red?",
+    "contexts": [
+      "The product is available in black and silver."
+    ],
+    "response": "The product is made of aluminum.",
+    "reference": "The listed colors are black and silver; red is not listed.",
+    "expected_grounded": false,
+    "expected_relevant": false,
+    "expected_context_relevance": [
+      true
+    ]
+  },
+  {
+    "id": "rag-10",
+    "question": "What is the store's bulk order discount?",
+    "contexts": [
+      "Orders of 20 or more items may qualify for a bulk discount. Contact sales for a quote.",
+      "The return period is 30 days."
+    ],
+    "response": "Orders of at least 20 items may qualify; contact sales for a quote.",
+    "reference": "Bulk discounts may be available for orders of 20 or more items; contact sales.",
+    "expected_grounded": true,
+    "expected_relevant": true,
+    "expected_context_relevance": [
+      true,
+      false
+    ]
+  }
+]
