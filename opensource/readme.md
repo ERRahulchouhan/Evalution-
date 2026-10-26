@@ -1,3 +1,4 @@
+s
 Open-source evaluation stack
 Tool	RAG	Agents	Main use
 Ragas	✅ Excellent	✅	Faithfulness, context precision/recall, answer relevancy, agent/tool metrics
